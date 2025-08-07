@@ -1,0 +1,252 @@
+/* CSS Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HTML tag styling - Requirement: CSS selector for HTML tag */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+/* Container class - Requirement: class applied to multiple elements */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* Box model properties - Requirement: change box model properties */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Header ID styling - Requirement: ID applied to element and styled */
+#main-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    /* Box model properties - Requirement: more box model changes */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    border-bottom: 3px solid #5a67d8;
+}
+
+#main-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+/* Tagline class - Requirement: class styling */
+.tagline {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Hero section styling */
+.hero-section {
+    background-color: white;
+    padding: 4rem 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.hero-image {
+    width: 400px;
+    height: 300px;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    object-fit: cover;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #666;
+}
+
+/* About section */
+.about-section {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+    list-style: none;
+}
+
+/* Skill item class - Requirement: class applied to multiple elements */
+.skill-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: 500;
+    color: #2c3e50;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Projects section */
+.projects-section {
+    background-color: white;
+    padding: 4rem 0;
+}
+
+.projects-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+/* Contact section */
+.contact-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.contact-section p {
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 2rem;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Contact link class - Requirement: class for styling links */
+.contact-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+/* Link hover effect - Requirement: CSS selector to change link color on hover */
+.contact-link:hover {
+    background-color: white;
+    color: #667eea;
+    border-color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Additional link styling for regular links */
+a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5a67d8;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer p {
+    color: rgba(255,255,255,0.8);
+    margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #main-header h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-image {
+        width: 100%;
+        max-width: 300px;
+        height: 225px;
+    }
+    
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
